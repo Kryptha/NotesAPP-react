@@ -10,10 +10,9 @@ const NotesList = ({ notes }) => {
             id={note.id} 
             title={note.title}
             body={note.body}
-            date={note.date}
+            date={note.created_at}
           />
         )}
-        <AddNote/>
       </div>
     </div>
   );
