@@ -5,6 +5,7 @@ const NotesList = ({ notes }) => {
   return(
     <div class='w-screen flex justify-center mt-5'>
       <div class='grid grid-cols-3 gap-4'>
+        <AddNote/>
         { notes.map((note)=> 
           <Note  
             id={note.id} 
