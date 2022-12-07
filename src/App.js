@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import NotesList from './components/NotesList'
 import axios from 'axios';
 
+//TODO This only for testing purpose
 const API_URL = 'http://localhost:3000'
 
 function App() {

@@ -1,7 +1,7 @@
 import { IconButton } from "@material-tailwind/react";
 import { MdDeleteForever } from "react-icons/md";
 import axios from 'axios';
-
+//TODO This only for testing purpose
 const API_URL = 'http://localhost:3000'
 
 const Note = ({id, title, body, date}) => {
@@ -11,6 +11,7 @@ const Note = ({id, title, body, date}) => {
     
     axios.delete(`${API_URL}/api/v1/notes/${id}`)
     .then(() => {
+      //TODO This only for testing purpose
       window.location.reload(false);
     });
   }

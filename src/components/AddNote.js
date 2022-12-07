@@ -4,6 +4,7 @@ import { IconButton } from "@material-tailwind/react";
 import { useState } from "react";
 import axios from 'axios';
 
+//TODO This only for testing purpose
 const API_URL = 'http://localhost:3000'
 
 function AddNote () {
@@ -27,6 +28,7 @@ function AddNote () {
       body: noteText
     })
     .then(() => {
+      //TODO This only for testing purpose
       window.location.reload(false);
     });
   }
